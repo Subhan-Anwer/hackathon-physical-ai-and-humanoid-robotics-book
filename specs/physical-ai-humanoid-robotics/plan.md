@@ -1,6 +1,6 @@
 # Implementation Plan: Physical AI & Humanoid Robotics Textbook
 
-**Branch**: `001-physical-ai-humanoid-robotics` | **Date**: 2025-12-18 | **Spec**: [specs/physical-ai-humanoid-robotics/spec.md](../specs/physical-ai-humanoid-robotics/spec.md)
+**Branch**: `main` | **Date**: 2025-12-18 | **Spec**: [specs/physical-ai-humanoid-robotics/spec.md](../specs/physical-ai-humanoid-robotics/spec.md)
 **Input**: Feature specification from `/specs/physical-ai-humanoid-robotics/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
@@ -19,7 +19,7 @@ Development of a comprehensive textbook on Physical AI and Humanoid Robotics des
 **Project Type**: Documentation/educational content with RAG integration
 **Performance Goals**: Fast loading pages, efficient search, responsive RAG queries
 **Constraints**: Accessible content, cross-platform compatibility, modular structure for customization
-**Scale/Scope**: 7 modules, 25+ chapters, supporting materials for 13-week university course
+**Scale/Scope**: 6 modules, 24 chapters, supporting materials for 13-week university course
 
 ## Constitution Check
 
@@ -64,7 +64,6 @@ site/
 │   ├── module-4/
 │   ├── module-5/
 │   ├── module-6/
-│   ├── module-7/
 │   └── capstone-project/
 ├── src/
 │   ├── components/
@@ -79,7 +78,7 @@ site/
 └── package.json
 ```
 
-**Structure Decision**: Single documentation project using Docusaurus framework to support the textbook content with interactive elements and RAG integration. The modular structure mirrors the 7-course modules with dedicated directories for each, enabling easy navigation and customization.
+**Structure Decision**: Single documentation project using Docusaurus framework to support the textbook content with interactive elements and RAG integration. The modular structure mirrors the 6-course modules with dedicated directories for each, enabling easy navigation and customization.
 
 ## Complexity Tracking
 

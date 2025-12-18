@@ -101,7 +101,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 1.1
 
-## Module 2: ROS 2 — The Robotic Nervous System
+## Module 2: Robotic Software Frameworks and Simulation
 
 ### Task 2.1: Create Module 2 Structure
 - **Objective**: Set up the basic directory structure and navigation for Module 2
@@ -139,7 +139,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 2.1
 
-### Task 2.4: Implement Chapter 2.3 - Message Types and Communication Patterns
+### Task 2.4: Implement Chapter 2.3 - Gazebo Physics Simulation
 - **Objective**: Create content for the third chapter of Module 2
 - **Steps**:
   - Create `site/docs/module-2/chapter-2.3.md`
@@ -151,7 +151,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 2.1
 
-### Task 2.5: Implement Chapter 2.4 - ROS 2 Tools and Debugging
+### Task 2.5: Implement Chapter 2.4 - Unity for Robotics Simulation
 - **Objective**: Create content for the fourth chapter of Module 2
 - **Steps**:
   - Create `site/docs/module-2/chapter-2.4.md`
@@ -163,7 +163,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 2.1
 
-### Task 2.6: Implement Lab 2.1 - ROS 2 installation and basic workspace setup
+### Task 2.6: Implement Chapter 2.5 - Digital Twin Concepts and Applications
+- **Objective**: Create content for the fifth chapter of Module 2
+- **Steps**:
+  - Create `site/docs/module-2/chapter-2.5.md`
+  - Include learning objectives from spec
+  - Add appropriate figures and diagrams
+- **Acceptance Criteria**:
+  - [ ] Content matches learning objectives
+  - [ ] All figures display correctly
+  - [ ] Page passes accessibility checks
+- **Dependencies**: Task 2.1
+
+### Task 2.7: Implement Lab 2.1 - ROS 2 installation and basic workspace setup
 - **Objective**: Create hands-on lab content for Module 2
 - **Steps**:
   - Create `site/docs/module-2/lab-2.1.md`
@@ -175,7 +187,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 2.1
 
-### Task 2.7: Implement Lab 2.2 - Creating publisher and subscriber nodes
+### Task 2.8: Implement Lab 2.2 - Creating publisher and subscriber nodes
 - **Objective**: Create hands-on lab content for Module 2
 - **Steps**:
   - Create `site/docs/module-2/lab-2.2.md`
@@ -187,7 +199,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 2.1
 
-### Task 2.8: Implement Lab 2.3 - Service and action implementation
+### Task 2.9: Implement Lab 2.3 - Gazebo environment setup and basic simulation
 - **Objective**: Create hands-on lab content for Module 2
 - **Steps**:
   - Create `site/docs/module-2/lab-2.3.md`
@@ -199,7 +211,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 2.1
 
-### Task 2.9: Implement Lab 2.4 - ROS 2 launch files and parameter management
+### Task 2.10: Implement Lab 2.4 - Unity robotics simulation setup
 - **Objective**: Create hands-on lab content for Module 2
 - **Steps**:
   - Create `site/docs/module-2/lab-2.4.md`
@@ -211,7 +223,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 2.1
 
-## Module 3: Gazebo & Unity — The Digital Twin
+### Task 2.11: Implement Lab 2.5 - Comparing simulation platforms for different use cases
+- **Objective**: Create hands-on lab content for Module 2
+- **Steps**:
+  - Create `site/docs/module-2/lab-2.5.md`
+  - Include step-by-step instructions
+  - Add prerequisites and expected outcomes
+- **Acceptance Criteria**:
+  - [ ] Instructions are clear and complete
+  - [ ] All prerequisites are listed
+  - [ ] Expected outcomes are defined
+- **Dependencies**: Task 2.1
+
+## Module 3: AI Perception and Control Systems
 
 ### Task 3.1: Create Module 3 Structure
 - **Objective**: Set up the basic directory structure and navigation for Module 3
@@ -225,7 +249,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Module overview page displays correctly
 - **Dependencies**: Module 2 completed
 
-### Task 3.2: Implement Chapter 3.1 - Simulation in Robotics
+### Task 3.2: Implement Chapter 3.1 - Introduction to NVIDIA Isaac Platform
 - **Objective**: Create content for the first chapter of Module 3
 - **Steps**:
   - Create `site/docs/module-3/chapter-3.1.md`
@@ -237,7 +261,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 3.1
 
-### Task 3.3: Implement Chapter 3.2 - Gazebo Physics Simulation
+### Task 3.3: Implement Chapter 3.2 - Isaac ROS and Hardware Acceleration
 - **Objective**: Create content for the second chapter of Module 3
 - **Steps**:
   - Create `site/docs/module-3/chapter-3.2.md`
@@ -249,7 +273,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 3.1
 
-### Task 3.4: Implement Chapter 3.3 - Unity for Robotics Simulation
+### Task 3.4: Implement Chapter 3.3 - Computer Vision for Robotics
 - **Objective**: Create content for the third chapter of Module 3
 - **Steps**:
   - Create `site/docs/module-3/chapter-3.3.md`
@@ -261,7 +285,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 3.1
 
-### Task 3.5: Implement Chapter 3.4 - Digital Twin Concepts and Applications
+### Task 3.5: Implement Chapter 3.4 - Sensor Fusion and State Estimation
 - **Objective**: Create content for the fourth chapter of Module 3
 - **Steps**:
   - Create `site/docs/module-3/chapter-3.4.md`
@@ -273,7 +297,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 3.1
 
-### Task 3.6: Implement Lab 3.1 - Gazebo environment setup and basic simulation
+### Task 3.6: Implement Chapter 3.5 - Control Theory for Physical AI
+- **Objective**: Create content for the fifth chapter of Module 3
+- **Steps**:
+  - Create `site/docs/module-3/chapter-3.5.md`
+  - Include learning objectives from spec
+  - Add appropriate figures and diagrams
+- **Acceptance Criteria**:
+  - [ ] Content matches learning objectives
+  - [ ] All figures display correctly
+  - [ ] Page passes accessibility checks
+- **Dependencies**: Task 3.1
+
+### Task 3.7: Implement Lab 3.1 - Isaac platform installation and setup
 - **Objective**: Create hands-on lab content for Module 3
 - **Steps**:
   - Create `site/docs/module-3/lab-3.1.md`
@@ -285,7 +321,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 3.1
 
-### Task 3.7: Implement Lab 3.2 - Robot model creation and physics configuration
+### Task 3.8: Implement Lab 3.2 - Basic perception pipeline implementation
 - **Objective**: Create hands-on lab content for Module 3
 - **Steps**:
   - Create `site/docs/module-3/lab-3.2.md`
@@ -297,7 +333,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 3.1
 
-### Task 3.8: Implement Lab 3.3 - Unity robotics simulation setup
+### Task 3.9: Implement Lab 3.3 - Multi-sensor integration and calibration
 - **Objective**: Create hands-on lab content for Module 3
 - **Steps**:
   - Create `site/docs/module-3/lab-3.3.md`
@@ -309,7 +345,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 3.1
 
-### Task 3.9: Implement Lab 3.4 - Comparing Gazebo and Unity for different use cases
+### Task 3.10: Implement Lab 3.4 - Control system design and tuning
 - **Objective**: Create hands-on lab content for Module 3
 - **Steps**:
   - Create `site/docs/module-3/lab-3.4.md`
@@ -321,7 +357,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 3.1
 
-## Module 4: NVIDIA Isaac — The AI-Robot Brain
+### Task 3.11: Implement Lab 3.5 - Hardware integration with Isaac-enabled robots
+- **Objective**: Create hands-on lab content for Module 3
+- **Steps**:
+  - Create `site/docs/module-3/lab-3.5.md`
+  - Include step-by-step instructions
+  - Add prerequisites and expected outcomes
+- **Acceptance Criteria**:
+  - [ ] Instructions are clear and complete
+  - [ ] All prerequisites are listed
+  - [ ] Expected outcomes are defined
+- **Dependencies**: Task 3.1
+
+## Module 4: Vision-Language-Action Integration
 
 ### Task 4.1: Create Module 4 Structure
 - **Objective**: Set up the basic directory structure and navigation for Module 4
@@ -335,7 +383,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Module overview page displays correctly
 - **Dependencies**: Module 3 completed
 
-### Task 4.2: Implement Chapter 4.1 - Introduction to NVIDIA Isaac Platform
+### Task 4.2: Implement Chapter 4.1 - Introduction to VLA Models
 - **Objective**: Create content for the first chapter of Module 4
 - **Steps**:
   - Create `site/docs/module-4/chapter-4.1.md`
@@ -347,7 +395,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 4.1
 
-### Task 4.3: Implement Chapter 4.2 - Isaac ROS and Hardware Acceleration
+### Task 4.3: Implement Chapter 4.2 - Vision Processing for Robotics
 - **Objective**: Create content for the second chapter of Module 4
 - **Steps**:
   - Create `site/docs/module-4/chapter-4.2.md`
@@ -359,7 +407,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 4.1
 
-### Task 4.4: Implement Chapter 4.3 - AI Perception and Planning
+### Task 4.4: Implement Chapter 4.3 - Language Understanding in Robotics Context
 - **Objective**: Create content for the third chapter of Module 4
 - **Steps**:
   - Create `site/docs/module-4/chapter-4.3.md`
@@ -371,7 +419,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 4.1
 
-### Task 4.5: Implement Chapter 4.4 - Isaac Sim and Omniverse Integration
+### Task 4.5: Implement Chapter 4.4 - Action Generation and Execution
 - **Objective**: Create content for the fourth chapter of Module 4
 - **Steps**:
   - Create `site/docs/module-4/chapter-4.4.md`
@@ -383,7 +431,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 4.1
 
-### Task 4.6: Implement Lab 4.1 - Isaac platform installation and setup
+### Task 4.6: Implement Chapter 4.5 - Multimodal AI for Physical Systems
+- **Objective**: Create content for the fifth chapter of Module 4
+- **Steps**:
+  - Create `site/docs/module-4/chapter-4.5.md`
+  - Include learning objectives from spec
+  - Add appropriate figures and diagrams
+- **Acceptance Criteria**:
+  - [ ] Content matches learning objectives
+  - [ ] All figures display correctly
+  - [ ] Page passes accessibility checks
+- **Dependencies**: Task 4.1
+
+### Task 4.7: Implement Lab 4.1 - Vision model integration with robot perception
 - **Objective**: Create hands-on lab content for Module 4
 - **Steps**:
   - Create `site/docs/module-4/lab-4.1.md`
@@ -395,7 +455,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 4.1
 
-### Task 4.7: Implement Lab 4.2 - Basic perception pipeline implementation
+### Task 4.8: Implement Lab 4.2 - Natural language command processing
 - **Objective**: Create hands-on lab content for Module 4
 - **Steps**:
   - Create `site/docs/module-4/lab-4.2.md`
@@ -407,7 +467,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 4.1
 
-### Task 4.8: Implement Lab 4.3 - AI-based navigation in Isaac Sim
+### Task 4.9: Implement Lab 4.3 - Vision-language-action pipeline implementation
 - **Objective**: Create hands-on lab content for Module 4
 - **Steps**:
   - Create `site/docs/module-4/lab-4.3.md`
@@ -419,7 +479,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 4.1
 
-### Task 4.9: Implement Lab 4.4 - Hardware integration with Isaac-enabled robots
+### Task 4.10: Implement Lab 4.4 - Multimodal task execution
 - **Objective**: Create hands-on lab content for Module 4
 - **Steps**:
   - Create `site/docs/module-4/lab-4.4.md`
@@ -431,7 +491,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 4.1
 
-## Module 5: Vision-Language-Action (VLA)
+### Task 4.11: Implement Lab 4.5 - Real-world task execution with VLA models
+- **Objective**: Create hands-on lab content for Module 4
+- **Steps**:
+  - Create `site/docs/module-4/lab-4.5.md`
+  - Include step-by-step instructions
+  - Add prerequisites and expected outcomes
+- **Acceptance Criteria**:
+  - [ ] Instructions are clear and complete
+  - [ ] All prerequisites are listed
+  - [ ] Expected outcomes are defined
+- **Dependencies**: Task 4.1
+
+## Module 5: Humanoid Locomotion & Manipulation
 
 ### Task 5.1: Create Module 5 Structure
 - **Objective**: Set up the basic directory structure and navigation for Module 5
@@ -445,7 +517,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Module overview page displays correctly
 - **Dependencies**: Module 4 completed
 
-### Task 5.2: Implement Chapter 5.1 - Introduction to VLA Models
+### Task 5.2: Implement Chapter 5.1 - Humanoid Robot Kinematics
 - **Objective**: Create content for the first chapter of Module 5
 - **Steps**:
   - Create `site/docs/module-5/chapter-5.1.md`
@@ -457,7 +529,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 5.1
 
-### Task 5.3: Implement Chapter 5.2 - Vision Processing for Robotics
+### Task 5.3: Implement Chapter 5.2 - Locomotion Control Strategies
 - **Objective**: Create content for the second chapter of Module 5
 - **Steps**:
   - Create `site/docs/module-5/chapter-5.2.md`
@@ -469,7 +541,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 5.1
 
-### Task 5.4: Implement Chapter 5.3 - Language Understanding in Robotics Context
+### Task 5.4: Implement Chapter 5.3 - Manipulation and Grasping
 - **Objective**: Create content for the third chapter of Module 5
 - **Steps**:
   - Create `site/docs/module-5/chapter-5.3.md`
@@ -481,7 +553,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 5.1
 
-### Task 5.5: Implement Chapter 5.4 - Action Generation and Execution
+### Task 5.5: Implement Chapter 5.4 - Whole-Body Control
 - **Objective**: Create content for the fourth chapter of Module 5
 - **Steps**:
   - Create `site/docs/module-5/chapter-5.4.md`
@@ -493,7 +565,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 5.1
 
-### Task 5.6: Implement Lab 5.1 - Vision model integration with robot perception
+### Task 5.6: Implement Chapter 5.5 - Balance and Stability Control
+- **Objective**: Create content for the fifth chapter of Module 5
+- **Steps**:
+  - Create `site/docs/module-5/chapter-5.5.md`
+  - Include learning objectives from spec
+  - Add appropriate figures and diagrams
+- **Acceptance Criteria**:
+  - [ ] Content matches learning objectives
+  - [ ] All figures display correctly
+  - [ ] Page passes accessibility checks
+- **Dependencies**: Task 5.1
+
+### Task 5.7: Implement Lab 5.1 - Forward and inverse kinematics implementation
 - **Objective**: Create hands-on lab content for Module 5
 - **Steps**:
   - Create `site/docs/module-5/lab-5.1.md`
@@ -505,7 +589,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 5.1
 
-### Task 5.7: Implement Lab 5.2 - Natural language command processing
+### Task 5.8: Implement Lab 5.2 - Walking pattern generation and control
 - **Objective**: Create hands-on lab content for Module 5
 - **Steps**:
   - Create `site/docs/module-5/lab-5.2.md`
@@ -517,7 +601,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 5.1
 
-### Task 5.8: Implement Lab 5.3 - Vision-language-action pipeline implementation
+### Task 5.9: Implement Lab 5.3 - Grasping and manipulation planning
 - **Objective**: Create hands-on lab content for Module 5
 - **Steps**:
   - Create `site/docs/module-5/lab-5.3.md`
@@ -529,7 +613,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 5.1
 
-### Task 5.9: Implement Lab 5.4 - Real-world task execution with VLA models
+### Task 5.10: Implement Lab 5.4 - Whole-body motion control integration
 - **Objective**: Create hands-on lab content for Module 5
 - **Steps**:
   - Create `site/docs/module-5/lab-5.4.md`
@@ -541,7 +625,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 5.1
 
-## Module 6: Humanoid Locomotion & Manipulation
+### Task 5.11: Implement Lab 5.5 - Balance recovery and stability exercises
+- **Objective**: Create hands-on lab content for Module 5
+- **Steps**:
+  - Create `site/docs/module-5/lab-5.5.md`
+  - Include step-by-step instructions
+  - Add prerequisites and expected outcomes
+- **Acceptance Criteria**:
+  - [ ] Instructions are clear and complete
+  - [ ] All prerequisites are listed
+  - [ ] Expected outcomes are defined
+- **Dependencies**: Task 5.1
+
+## Module 6: Human-Robot Interaction and Ethics
 
 ### Task 6.1: Create Module 6 Structure
 - **Objective**: Set up the basic directory structure and navigation for Module 6
@@ -555,7 +651,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Module overview page displays correctly
 - **Dependencies**: Module 5 completed
 
-### Task 6.2: Implement Chapter 6.1 - Humanoid Robot Kinematics
+### Task 6.2: Implement Chapter 6.1 - Human-Robot Interaction Principles
 - **Objective**: Create content for the first chapter of Module 6
 - **Steps**:
   - Create `site/docs/module-6/chapter-6.1.md`
@@ -567,7 +663,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 6.1
 
-### Task 6.3: Implement Chapter 6.2 - Locomotion Control Strategies
+### Task 6.3: Implement Chapter 6.2 - Natural Language Processing for Robots
 - **Objective**: Create content for the second chapter of Module 6
 - **Steps**:
   - Create `site/docs/module-6/chapter-6.2.md`
@@ -579,7 +675,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 6.1
 
-### Task 6.4: Implement Chapter 6.3 - Manipulation and Grasping
+### Task 6.4: Implement Chapter 6.3 - Context-Aware Conversational Systems
 - **Objective**: Create content for the third chapter of Module 6
 - **Steps**:
   - Create `site/docs/module-6/chapter-6.3.md`
@@ -591,7 +687,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 6.1
 
-### Task 6.5: Implement Chapter 6.4 - Whole-Body Control
+### Task 6.5: Implement Chapter 6.4 - Social Robotics and Ethical Considerations
 - **Objective**: Create content for the fourth chapter of Module 6
 - **Steps**:
   - Create `site/docs/module-6/chapter-6.4.md`
@@ -603,7 +699,19 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Page passes accessibility checks
 - **Dependencies**: Task 6.1
 
-### Task 6.6: Implement Lab 6.1 - Forward and inverse kinematics implementation
+### Task 6.6: Implement Chapter 6.5 - Trust and Safety in Physical AI Systems
+- **Objective**: Create content for the fifth chapter of Module 6
+- **Steps**:
+  - Create `site/docs/module-6/chapter-6.5.md`
+  - Include learning objectives from spec
+  - Add appropriate figures and diagrams
+- **Acceptance Criteria**:
+  - [ ] Content matches learning objectives
+  - [ ] All figures display correctly
+  - [ ] Page passes accessibility checks
+- **Dependencies**: Task 6.1
+
+### Task 6.7: Implement Lab 6.1 - Basic conversational agent setup
 - **Objective**: Create hands-on lab content for Module 6
 - **Steps**:
   - Create `site/docs/module-6/lab-6.1.md`
@@ -615,7 +723,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 6.1
 
-### Task 6.7: Implement Lab 6.2 - Walking pattern generation and control
+### Task 6.8: Implement Lab 6.2 - Context integration in robot dialogue
 - **Objective**: Create hands-on lab content for Module 6
 - **Steps**:
   - Create `site/docs/module-6/lab-6.2.md`
@@ -627,7 +735,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 6.1
 
-### Task 6.8: Implement Lab 6.3 - Grasping and manipulation planning
+### Task 6.9: Implement Lab 6.3 - Multi-modal interaction implementation
 - **Objective**: Create hands-on lab content for Module 6
 - **Steps**:
   - Create `site/docs/module-6/lab-6.3.md`
@@ -639,7 +747,7 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 6.1
 
-### Task 6.9: Implement Lab 6.4 - Whole-body motion control integration
+### Task 6.10: Implement Lab 6.4 - Ethical design considerations in practice
 - **Objective**: Create hands-on lab content for Module 6
 - **Steps**:
   - Create `site/docs/module-6/lab-6.4.md`
@@ -651,115 +759,17 @@ This document outlines the specific, testable tasks required to implement the Ph
   - [ ] Expected outcomes are defined
 - **Dependencies**: Task 6.1
 
-## Module 7: Conversational Robotics
-
-### Task 7.1: Create Module 7 Structure
-- **Objective**: Set up the basic directory structure and navigation for Module 7
+### Task 6.11: Implement Lab 6.5 - Safety protocol implementation
+- **Objective**: Create hands-on lab content for Module 6
 - **Steps**:
-  - Create `site/docs/module-7/` directory
-  - Create `site/docs/module-7/index.md` as module overview
-  - Add module to `sidebars.js`
-- **Acceptance Criteria**:
-  - [ ] Directory structure exists
-  - [ ] Navigation appears in sidebar
-  - [ ] Module overview page displays correctly
-- **Dependencies**: Module 6 completed
-
-### Task 7.2: Implement Chapter 7.1 - Human-Robot Interaction Principles
-- **Objective**: Create content for the first chapter of Module 7
-- **Steps**:
-  - Create `site/docs/module-7/chapter-7.1.md`
-  - Include learning objectives from spec
-  - Add appropriate figures and diagrams
-- **Acceptance Criteria**:
-  - [ ] Content matches learning objectives
-  - [ ] All figures display correctly
-  - [ ] Page passes accessibility checks
-- **Dependencies**: Task 7.1
-
-### Task 7.3: Implement Chapter 7.2 - Natural Language Processing for Robots
-- **Objective**: Create content for the second chapter of Module 7
-- **Steps**:
-  - Create `site/docs/module-7/chapter-7.2.md`
-  - Include learning objectives from spec
-  - Add appropriate figures and diagrams
-- **Acceptance Criteria**:
-  - [ ] Content matches learning objectives
-  - [ ] All figures display correctly
-  - [ ] Page passes accessibility checks
-- **Dependencies**: Task 7.1
-
-### Task 7.4: Implement Chapter 7.3 - Context-Aware Conversational Systems
-- **Objective**: Create content for the third chapter of Module 7
-- **Steps**:
-  - Create `site/docs/module-7/chapter-7.3.md`
-  - Include learning objectives from spec
-  - Add appropriate figures and diagrams
-- **Acceptance Criteria**:
-  - [ ] Content matches learning objectives
-  - [ ] All figures display correctly
-  - [ ] Page passes accessibility checks
-- **Dependencies**: Task 7.1
-
-### Task 7.5: Implement Chapter 7.4 - Social Robotics and Ethical Considerations
-- **Objective**: Create content for the fourth chapter of Module 7
-- **Steps**:
-  - Create `site/docs/module-7/chapter-7.4.md`
-  - Include learning objectives from spec
-  - Add appropriate figures and diagrams
-- **Acceptance Criteria**:
-  - [ ] Content matches learning objectives
-  - [ ] All figures display correctly
-  - [ ] Page passes accessibility checks
-- **Dependencies**: Task 7.1
-
-### Task 7.6: Implement Lab 7.1 - Basic conversational agent setup
-- **Objective**: Create hands-on lab content for Module 7
-- **Steps**:
-  - Create `site/docs/module-7/lab-7.1.md`
+  - Create `site/docs/module-6/lab-6.5.md`
   - Include step-by-step instructions
   - Add prerequisites and expected outcomes
 - **Acceptance Criteria**:
   - [ ] Instructions are clear and complete
   - [ ] All prerequisites are listed
   - [ ] Expected outcomes are defined
-- **Dependencies**: Task 7.1
-
-### Task 7.7: Implement Lab 7.2 - Context integration in robot dialogue
-- **Objective**: Create hands-on lab content for Module 7
-- **Steps**:
-  - Create `site/docs/module-7/lab-7.2.md`
-  - Include step-by-step instructions
-  - Add prerequisites and expected outcomes
-- **Acceptance Criteria**:
-  - [ ] Instructions are clear and complete
-  - [ ] All prerequisites are listed
-  - [ ] Expected outcomes are defined
-- **Dependencies**: Task 7.1
-
-### Task 7.8: Implement Lab 7.3 - Multi-modal interaction implementation
-- **Objective**: Create hands-on lab content for Module 7
-- **Steps**:
-  - Create `site/docs/module-7/lab-7.3.md`
-  - Include step-by-step instructions
-  - Add prerequisites and expected outcomes
-- **Acceptance Criteria**:
-  - [ ] Instructions are clear and complete
-  - [ ] All prerequisites are listed
-  - [ ] Expected outcomes are defined
-- **Dependencies**: Task 7.1
-
-### Task 7.9: Implement Lab 7.4 - Ethical design considerations in practice
-- **Objective**: Create hands-on lab content for Module 7
-- **Steps**:
-  - Create `site/docs/module-7/lab-7.4.md`
-  - Include step-by-step instructions
-  - Add prerequisites and expected outcomes
-- **Acceptance Criteria**:
-  - [ ] Instructions are clear and complete
-  - [ ] All prerequisites are listed
-  - [ ] Expected outcomes are defined
-- **Dependencies**: Task 7.1
+- **Dependencies**: Task 6.1
 
 ## Capstone Project
 

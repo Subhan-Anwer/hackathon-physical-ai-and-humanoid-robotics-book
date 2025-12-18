@@ -32,7 +32,7 @@
 - Index
 
 ### 2.2 Module-Based Chapters
-The textbook is organized into 7 core modules, each designed to build upon previous knowledge while maintaining independence for flexible course design.
+The textbook is organized into 6 core modules, each designed to build upon previous knowledge while maintaining independence for flexible course design. The structure includes approximately 24 chapters total.
 
 ### 2.3 Capstone Project
 - Integrated project combining all modules
@@ -65,155 +65,150 @@ The textbook is organized into 7 core modules, each designed to build upon previ
 - Include code examples and diagrams as separate chunks
 - Tag with difficulty level and prerequisite knowledge
 
-### 3.2 Module 2: ROS 2 — The Robotic Nervous System
+### 3.2 Module 2: Robotic Software Frameworks and Simulation
 
 #### 3.2.1 Chapters
 - Chapter 2.1: ROS 2 Architecture and Concepts
 - Chapter 2.2: Nodes, Topics, Services, and Actions
-- Chapter 2.3: Message Types and Communication Patterns
-- Chapter 2.4: ROS 2 Tools and Debugging
+- Chapter 2.3: Gazebo Physics Simulation
+- Chapter 2.4: Unity for Robotics Simulation
+- Chapter 2.5: Digital Twin Concepts and Applications
 
 #### 3.2.2 Learning Objectives
 - Understand ROS 2 architecture and its role in robotics
 - Implement nodes, topics, and services for robot communication
-- Use ROS 2 tools for debugging and monitoring
-- Design modular robot software systems
-
-#### 3.2.3 Hands-on Labs
-- Lab 2.1: ROS 2 installation and basic workspace setup
-- Lab 2.2: Creating publisher and subscriber nodes
-- Lab 2.3: Service and action implementation
-- Lab 2.4: ROS 2 launch files and parameter management
-
-#### 3.2.4 RAG Chunking Notes
-- Separate chunks for ROS 2 concepts vs. practical implementation
-- Code snippets as standalone chunks with explanations
-- Troubleshooting guides as separate knowledge chunks
-
-### 3.3 Module 3: Gazebo & Unity — The Digital Twin
-
-#### 3.3.1 Chapters
-- Chapter 3.1: Simulation in Robotics
-- Chapter 3.2: Gazebo Physics Simulation
-- Chapter 3.3: Unity for Robotics Simulation
-- Chapter 3.4: Digital Twin Concepts and Applications
-
-#### 3.3.2 Learning Objectives
-- Understand the importance of simulation in robotics development
 - Create and configure Gazebo simulation environments
 - Implement Unity-based robotics simulations
 - Apply digital twin concepts to robot development
 
-#### 3.3.3 Hands-on Labs
-- Lab 3.1: Gazebo environment setup and basic simulation
-- Lab 3.2: Robot model creation and physics configuration
-- Lab 3.3: Unity robotics simulation setup
-- Lab 3.4: Comparing Gazebo and Unity for different use cases
+#### 3.2.3 Hands-on Labs
+- Lab 2.1: ROS 2 installation and basic workspace setup
+- Lab 2.2: Creating publisher and subscriber nodes
+- Lab 2.3: Gazebo environment setup and basic simulation
+- Lab 2.4: Unity robotics simulation setup
+- Lab 2.5: Comparing simulation platforms for different use cases
 
-#### 3.3.4 RAG Chunking Notes
+#### 3.2.4 RAG Chunking Notes
+- Separate chunks for ROS 2 concepts vs. practical implementation
+- Code snippets as standalone chunks with explanations
 - Chunk by simulation platform (Gazebo vs. Unity)
 - Include configuration files and URDF models as separate chunks
-- Performance considerations as distinct knowledge chunks
 
-### 3.4 Module 4: NVIDIA Isaac — The AI-Robot Brain
+### 3.3 Module 3: AI Perception and Control Systems
 
-#### 3.4.1 Chapters
-- Chapter 4.1: Introduction to NVIDIA Isaac Platform
-- Chapter 4.2: Isaac ROS and Hardware Acceleration
-- Chapter 4.3: AI Perception and Planning
-- Chapter 4.4: Isaac Sim and Omniverse Integration
+#### 3.3.1 Chapters
+- Chapter 3.1: Introduction to NVIDIA Isaac Platform
+- Chapter 3.2: Isaac ROS and Hardware Acceleration
+- Chapter 3.3: Computer Vision for Robotics
+- Chapter 3.4: Sensor Fusion and State Estimation
+- Chapter 3.5: Control Theory for Physical AI
 
-#### 3.4.2 Learning Objectives
+#### 3.3.2 Learning Objectives
 - Understand NVIDIA Isaac platform architecture
 - Implement AI-powered perception and planning algorithms
 - Utilize GPU acceleration for robotics applications
-- Integrate with Isaac Sim for advanced simulation
+- Integrate multiple sensor modalities for robust perception
+- Apply control theory to physical AI systems
 
-#### 3.4.3 Hands-on Labs
-- Lab 4.1: Isaac platform installation and setup
-- Lab 4.2: Basic perception pipeline implementation
-- Lab 4.3: AI-based navigation in Isaac Sim
-- Lab 4.4: Hardware integration with Isaac-enabled robots
+#### 3.3.3 Hands-on Labs
+- Lab 3.1: Isaac platform installation and setup
+- Lab 3.2: Basic perception pipeline implementation
+- Lab 3.3: Multi-sensor integration and calibration
+- Lab 3.4: Control system design and tuning
+- Lab 3.5: Hardware integration with Isaac-enabled robots
 
-#### 3.4.4 RAG Chunking Notes
+#### 3.3.4 RAG Chunking Notes
 - Technical specifications as separate chunks
 - Code examples for different Isaac components
+- Mathematical concepts for control theory as distinct chunks
 - Hardware requirements and compatibility notes
 
-### 3.5 Module 5: Vision-Language-Action (VLA)
+### 3.4 Module 4: Vision-Language-Action Integration
 
-#### 3.5.1 Chapters
-- Chapter 5.1: Introduction to VLA Models
-- Chapter 5.2: Vision Processing for Robotics
-- Chapter 5.3: Language Understanding in Robotics Context
-- Chapter 5.4: Action Generation and Execution
+#### 3.4.1 Chapters
+- Chapter 4.1: Introduction to VLA Models
+- Chapter 4.2: Vision Processing for Robotics
+- Chapter 4.3: Language Understanding in Robotics Context
+- Chapter 4.4: Action Generation and Execution
+- Chapter 4.5: Multimodal AI for Physical Systems
 
-#### 3.5.2 Learning Objectives
+#### 3.4.2 Learning Objectives
 - Understand Vision-Language-Action model architectures
 - Implement visual perception for robotic tasks
 - Integrate natural language understanding in robot systems
 - Design action execution pipelines
+- Combine multiple modalities for complex tasks
 
-#### 3.5.3 Hands-on Labs
-- Lab 5.1: Vision model integration with robot perception
-- Lab 5.2: Natural language command processing
-- Lab 5.3: Vision-language-action pipeline implementation
-- Lab 5.4: Real-world task execution with VLA models
+#### 3.4.3 Hands-on Labs
+- Lab 4.1: Vision model integration with robot perception
+- Lab 4.2: Natural language command processing
+- Lab 4.3: Vision-language-action pipeline implementation
+- Lab 4.4: Multimodal task execution
+- Lab 4.5: Real-world task execution with VLA models
 
-#### 3.5.4 RAG Chunking Notes
+#### 3.4.4 RAG Chunking Notes
 - Model architectures as conceptual chunks
 - Implementation patterns as practical chunks
 - Evaluation metrics and benchmarks as separate chunks
+- Integration patterns as distinct knowledge chunks
 
-### 3.6 Module 6: Humanoid Locomotion & Manipulation
+### 3.5 Module 5: Humanoid Locomotion & Manipulation
 
-#### 3.6.1 Chapters
-- Chapter 6.1: Humanoid Robot Kinematics
-- Chapter 6.2: Locomotion Control Strategies
-- Chapter 6.3: Manipulation and Grasping
-- Chapter 6.4: Whole-Body Control
+#### 3.5.1 Chapters
+- Chapter 5.1: Humanoid Robot Kinematics
+- Chapter 5.2: Locomotion Control Strategies
+- Chapter 5.3: Manipulation and Grasping
+- Chapter 5.4: Whole-Body Control
+- Chapter 5.5: Balance and Stability Control
 
-#### 3.6.2 Learning Objectives
+#### 3.5.2 Learning Objectives
 - Understand humanoid robot kinematics and dynamics
 - Implement locomotion control algorithms
 - Design manipulation and grasping strategies
 - Apply whole-body control techniques
+- Maintain balance and stability in dynamic environments
 
-#### 3.6.3 Hands-on Labs
-- Lab 6.1: Forward and inverse kinematics implementation
-- Lab 6.2: Walking pattern generation and control
-- Lab 6.3: Grasping and manipulation planning
-- Lab 6.4: Whole-body motion control integration
+#### 3.5.3 Hands-on Labs
+- Lab 5.1: Forward and inverse kinematics implementation
+- Lab 5.2: Walking pattern generation and control
+- Lab 5.3: Grasping and manipulation planning
+- Lab 5.4: Whole-body motion control integration
+- Lab 5.5: Balance recovery and stability exercises
 
-#### 3.6.4 RAG Chunking Notes
+#### 3.5.4 RAG Chunking Notes
 - Mathematical concepts as separate chunks
 - Control algorithms as implementation chunks
 - Safety considerations as distinct chunks
+- Kinematic equations and derivations separately documented
 
-### 3.7 Module 7: Conversational Robotics
+### 3.6 Module 6: Human-Robot Interaction and Ethics
 
-#### 3.7.1 Chapters
-- Chapter 7.1: Human-Robot Interaction Principles
-- Chapter 7.2: Natural Language Processing for Robots
-- Chapter 7.3: Context-Aware Conversational Systems
-- Chapter 7.4: Social Robotics and Ethical Considerations
+#### 3.6.1 Chapters
+- Chapter 6.1: Human-Robot Interaction Principles
+- Chapter 6.2: Natural Language Processing for Robots
+- Chapter 6.3: Context-Aware Conversational Systems
+- Chapter 6.4: Social Robotics and Ethical Considerations
+- Chapter 6.5: Trust and Safety in Physical AI Systems
 
-#### 3.7.2 Learning Objectives
+#### 3.6.2 Learning Objectives
 - Design effective human-robot interaction systems
 - Implement natural language processing for robotics
 - Create context-aware conversational agents
 - Understand ethical implications of social robotics
+- Ensure safety and trust in physical AI deployments
 
-#### 3.7.3 Hands-on Labs
-- Lab 7.1: Basic conversational agent setup
-- Lab 7.2: Context integration in robot dialogue
-- Lab 7.3: Multi-modal interaction implementation
-- Lab 7.4: Ethical design considerations in practice
+#### 3.6.3 Hands-on Labs
+- Lab 6.1: Basic conversational agent setup
+- Lab 6.2: Context integration in robot dialogue
+- Lab 6.3: Multi-modal interaction implementation
+- Lab 6.4: Ethical design considerations in practice
+- Lab 6.5: Safety protocol implementation
 
-#### 3.7.4 RAG Chunking Notes
+#### 3.6.4 RAG Chunking Notes
 - Interaction design principles as conceptual chunks
 - Implementation examples as practical chunks
 - Ethical frameworks as separate knowledge chunks
+- Safety protocols as distinct documentation units
 
 ## 4. Capstone Project Specification
 

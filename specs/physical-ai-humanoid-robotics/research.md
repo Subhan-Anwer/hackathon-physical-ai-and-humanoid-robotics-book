@@ -9,11 +9,11 @@
 - Custom React application: Higher maintenance overhead
 
 ## Decision: Module Structure
-**Rationale**: The 7-module structure aligns with a typical 13-week semester schedule, allowing 1-2 weeks per module with flexibility for review and exams. This structure enables progressive learning from basic concepts to advanced applications like conversational robotics.
+**Rationale**: The 6-module structure aligns with a typical 13-week semester schedule, allowing 2-3 weeks per module with flexibility for review and exams. This structure enables progressive learning from basic concepts to advanced applications like humanoid robotics and human-robot interaction, with each module containing approximately 4-5 chapters for comprehensive coverage.
 
 **Alternatives considered**:
 - 5 larger modules: Would create overwhelming content chunks
-- 10 smaller modules: Would fragment the learning experience
+- 7 smaller modules: Would fragment the learning experience and require more context switching
 
 ## Decision: Simulation Environments
 **Rationale**: Including both Gazebo and Unity provides students exposure to industry-standard simulation tools. Gazebo offers realistic physics for robotics research, while Unity provides advanced graphics and user experience for more complex scenarios. This dual approach prepares students for various industry environments.

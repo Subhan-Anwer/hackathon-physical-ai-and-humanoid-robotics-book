@@ -193,8 +193,8 @@ export QDRANT_URL=your-qdrant-url
 3. Test navigation locally before committing
 
 ### Adding New Module
-1. Create new directory: `site/docs/module-8/`
-2. Add main module file: `site/docs/module-8/index.md`
+1. Create new directory: `site/docs/module-7/` (to extend beyond the current 6 modules)
+2. Add main module file: `site/docs/module-7/index.md`
 3. Update `sidebars.js` to include new module
 4. Update `docusaurus.config.js` if creating new navigation category
 
