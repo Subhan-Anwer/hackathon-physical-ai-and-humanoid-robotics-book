@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+  color: var(--ifm-font-color-base-inverse);
 }
 
 @media screen and (max-width: 996px) {
@@ -16,8 +18,265 @@
   }
 }
 
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroDescription {
+  font-size: 0.75rem;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 996px) {
+  .heroDescription {
+    font-size: 1rem;
+  }
+}
+
 .buttons {
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Custom GitHub button styling to ensure visibility in both themes */
+.buttons .button--outline {
+  background-color: var(--ifm-color-emphasis-100);
+  border: 2px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .buttons .button--outline {
+  background-color: var(--ifm-color-emphasis-200);
+  border: 2px solid var(--ifm-color-emphasis-600);
+  color: var(--ifm-font-color-base);
+}
+
+.buttons .button--outline:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .buttons .button--outline:hover {
+  background-color: var(--ifm-color-emphasis-300);
+  border-color: var(--ifm-color-emphasis-500);
+  color: var(--ifm-font-color-base);
+}
+
+@media screen and (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 996px) {
+  .section {
+    padding: 2rem 0;
+  }
+}
+
+.grayBackground {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 996px) {
+  .grayBackground {
+    padding: 2rem 0;
+  }
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem !important;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 996px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
+/* What You Will Learn Section */
+.learnCard {
+  background-color: var(--ifm-card-background-color);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  box-shadow: var(--ifm-global-shadow-lw);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learnCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.iconContainer {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bookIcon {
+  color: var(--ifm-color-primary);
+  transition: color 0.3s ease;
+}
+
+.learnCard:hover .bookIcon {
+  color: var(--ifm-color-primary-dark);
+}
+
+.learnCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.learnCardDescription {
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-base);
+  line-height: 1.6;
+}
+
+/* Book Structure Section */
+.moduleCard {
+  background-color: var(--ifm-card-background-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  box-shadow: var(--ifm-global-shadow-lw);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.moduleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.moduleIcon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.moduleTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-heading-color);
+}
+
+.moduleDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-font-color-base);
+  line-height: 1.5;
+}
+
+/* Hands-On Focus Section */
+.handsOnContainer {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.handsOnDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 2rem;
+}
+
+.handsOnList {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+
+.handsOnList li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+}
+
+/* Final CTA Section */
+.finalCTA {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.finalCTADescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 2rem;
+}
+
+.finalButtons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 996px) {
+  .learnCard, .moduleCard {
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col--3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col--4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .grayBackground {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .col--3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
 }
