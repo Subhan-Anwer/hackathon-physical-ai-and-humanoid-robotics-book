@@ -4,20 +4,26 @@ import trafilatura
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
 import cohere
+import dotenv
+import os
+
+dotenv.load_dotenv()
+
+
 
 # -----------------------------------
 # CONFIG
 # -----------------------------------
-SITEMAP_URL = "https://subhan-anwer.github.io/hackathon-physical-ai-and-humanoid-robotics-book/sitemap.xml"
-COLLECTION_NAME = "ai-humanoid-book"
+SITEMAP_URL = os.getenv("SITEMAP_URL")
+COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 
-cohere_client = cohere.Client("mPf2oKWDxTwp8eYMJkMJZE11FV0eDeQ6WHKbB5Sk")
+cohere_client = cohere.Client(os.getenv("COHERE_API_KEY"))
 EMBED_MODEL = "embed-english-v3.0"
 
 # Connect to Qdrant Cloud
 qdrant = QdrantClient(
-    url="https://71362819-7e51-4503-83d4-7ee695c82222.europe-west3-0.gcp.cloud.qdrant.io:6333",
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.EQiTVQie3YPg92jdw58xS3TMC9fjcH0qXGVjfloxL6s"
+    url=os.getenv("QDRANT_URL"),
+    api_key=os.getenv("QDRANT_API_KEY")
 )
 
 
