@@ -1,0 +1,29 @@
+# =====================
+# Environment variables
+# =====================
+.env
+backend/.env
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+backend/.venv/
+
+# =====================
+# Node / Docusaurus
+# =====================
+node_modules/
+build/
+.cache/
+
+# =====================
+# OS / Editor
+# =====================
+.DS_Store
+.vscode/
+.idea/
