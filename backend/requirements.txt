@@ -8,3 +8,5 @@ pydantic
 python-dotenv
 httpx
 openai-agents
+markdown
+beautifulsoup4
