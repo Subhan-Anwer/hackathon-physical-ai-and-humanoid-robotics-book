@@ -12,3 +12,6 @@ class RetrievedChunk(BaseModel):
 
 class RetrieveResponse(BaseModel):
     results: List[RetrievedChunk]
+    
+class AgentQueryRequest(BaseModel):
+    query: str

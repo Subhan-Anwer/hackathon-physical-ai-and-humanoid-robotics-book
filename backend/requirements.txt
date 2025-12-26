@@ -10,3 +10,4 @@ httpx
 openai-agents
 markdown
 beautifulsoup4
+psycopg
