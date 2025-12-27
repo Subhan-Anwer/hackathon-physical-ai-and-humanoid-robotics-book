@@ -62,30 +62,61 @@ const Chatbot: React.FC = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (!inputValue.trim() || isLoading) return;
 
     // Add user message
     const userMessage: Message = {
       id: Date.now().toString(),
-      role: 'user',
-      content: inputValue
+      role: "user",
+      content: inputValue,
     };
 
-    setMessages(prev => [...prev, userMessage]);
-    setInputValue('');
+    setMessages((prev) => [...prev, userMessage]);
+    setInputValue("");
     setIsLoading(true);
 
-    // Simulate API response (will be replaced with actual API call later)
-    setTimeout(() => {
+    try {
+      const response = await fetch(
+        'https://subhananwer-textbook-rag-chatbot.hf.space/agent_query',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            query: inputValue,
+            selected_text: queryMode === 'selected_text' && selectedText ? selectedText : null,
+          })
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Backend Error: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
-        role: 'assistant',
-        content: 'This is a simulated response. The actual backend integration will be added later.'
+        role: "assistant",
+        content: data.results,
       };
-      setMessages(prev => [...prev, assistantMessage]);
+
+      setMessages((prev) => [...prev, assistantMessage]);
+    } catch (error) {
+      console.error(error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: (Date.now() + 1).toString(),
+          role: "assistant",
+          content: "⚠️ Sorry, there was an error. Please try again.",
+        }
+      ]);
+    } finally {
       setIsLoading(false);
-    }, 1000);
+    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
