@@ -1,0 +1,23 @@
+{
+  "name": "@docusaurus/rag-chatbot-ui",
+  "version": "1.0.0",
+  "description": "A RAG chatbot UI for Docusaurus-based book websites",
+  "main": "index.tsx",
+  "types": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docusaurus",
+    "chatbot",
+    "rag",
+    "react",
+    "ui"
+  ],
+  "author": "Claude Code",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  }
+}
