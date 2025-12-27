@@ -1,7 +1,3 @@
-# from dotenv import load_dotenv
-# load_dotenv()
-
-
 from fastapi import FastAPI
 from .schemas import RetrieveRequest, RetrieveResponse, AgentQueryRequest
 from .retrieval import retrieve_chunks
@@ -18,5 +14,8 @@ def retrieve(req: RetrieveRequest):
 
 @app.post("/agent_query")
 def agent_query(req: AgentQueryRequest):
-    results = run_agent(req.query)
+    results = run_agent(
+        req.query,
+        selected_text=req.selected_text,
+    )
     return {"results": results}

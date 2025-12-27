@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 class RetrieveRequest(BaseModel):
     query: str
@@ -15,3 +15,4 @@ class RetrieveResponse(BaseModel):
     
 class AgentQueryRequest(BaseModel):
     query: str
+    selected_text: Optional[str] = None

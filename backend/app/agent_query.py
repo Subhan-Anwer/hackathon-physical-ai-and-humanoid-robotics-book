@@ -1,31 +1,56 @@
-from agents import Agent, Runner, function_tool
+from agents import Agent, Runner
 from app.retrieval import retrieve_chunks
 from app.db import save_chat
 from dotenv import load_dotenv
 
 load_dotenv()
 
-@function_tool
-def retrieval_tool(query: str):
-    return retrieve_chunks(query, top_k = 5)
-
-
 
 
 agent = Agent(
     name="book-rag-agent",
     instructions=(
-        "You MUST call the retrieval_tool to answer. "
-        "Use ONLY retrieved book chunks. "
-        "Do not answer from prior knowledge."
+        "Answer the question using ONLY the provided book content. "
+        "If the answer is not in the content, say you don't know."
     ),
-    tools=[retrieval_tool],
 )
 
-def run_agent(query: str) -> str:
+def run_agent(query: str, selected_text: str = None) -> str:
+    # 1. Always retrieve from Qdrant
+    chunks = retrieve_chunks(query, top_k=5)
+    
+    context = "\n\n".join(
+        f"[Source: {c.path}]\n{c.text}" for c in chunks
+    )
+    
+    # 2. Selected text is OPTIONAL bias
+    if selected_text:
+        prompt = f"""
+        Selected text (may be incomplete or noisy):
+        {selected_text}
+
+        Book content:
+        {context}
+
+        Question:
+        {query}
+
+        Answer ONLY using the book content above.
+        """
+    else:
+        prompt = f"""
+        Book content:
+        {context}
+
+        Question:
+        {query}
+
+        Answer ONLY using the book content above.
+        """
+    
     result = Runner.run_sync(
         agent,
-        input=query,
+        input=prompt,
     )
 
     answer = result.final_output
